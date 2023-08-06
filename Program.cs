@@ -2,11 +2,16 @@
 Console.WriteLine(numberA);
 int numberB = new Random().Next(1,10);
 Console.WriteLine(numberB);
-if (numberA > numberB)
+int numberC = new Random().Next(1,10);
+Console.WriteLine(numberC);
+int max = numberA;
+if (numberB > max)
 {
-    Console.WriteLine(numberA);
+    max = numberB;
 }
 else
-{
-    Console.WriteLine(numberB);
-}
+    if (numberC > max)
+    {
+    max = numberC;
+    }
+System.Console.WriteLine(max);
